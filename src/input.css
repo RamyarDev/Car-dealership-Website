@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primaryColor: #020914;
+  --color-SecondaryColor: #171c28;
+  --font-primaryFont: Noto Sans;
+  --font-SecondaryFont: Roboto;
+}
+@layer components {
+  .active {
+    color: #020914;
+    scale: 1.1;
+    font-weight: 400;
+  }
+  .active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .notActive {
+    opacity: 50%;
+    filter: blur(0.6px);
+  }
+}

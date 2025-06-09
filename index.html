@@ -5,8 +5,336 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web-Cars-Project</title>
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/0276ad4206.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- Header-Container -->
+    <section class="bg-primaryColor max-h-[945px]">
+      <!-- Links & Logo -->
+      <div class="flex justify-around pt-5">
+        <a href="#">
+          <img class="animate-pulse" src="Logo/Cars-Web-Logo-Header.png" alt="Header-Logo" />
+        </a>
+        <div class="text-white flex gap-5">
+          <a href="#" class="cursor-pointer">Home</a>
+          <a
+            href="#"
+            class="cursor-pointer opacity-80 hover:opacity-100 hover:scale-[1.1] transition"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            class="cursor-pointer opacity-80 hover:opacity-100 hover:scale-[1.1] transition"
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            class="cursor-pointer opacity-80 hover:opacity-100 hover:scale-[1.1] transition"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+      <!-- Header-Content -->
+      <div class="flex items-center justify-between px-[80px] pt-[70px]">
+        <!-- Texts -->
+        <div class="text-white flex flex-col justify-around items-start h-[600px] w-[730px]">
+          <h1 class="text-[96px] w-[700px] font-bold">Find Your Dream Car</h1>
+          <p class="text-3xl font-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt doloremque
+            cum ab necessitatibus. Asperiores hic sit sint repellat explicabo!
+          </p>
+          <!-- From Uiverse.io by tirth_5172 -->
+          <button
+            class="relative cursor-pointer py-5 px-10 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline-white focus:outline-offset-4 overflow-hidden"
+          >
+            <span class="relative z-20">Read More</span>
+
+            <span
+              class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"
+            ></span>
+
+            <span
+              class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"
+            ></span>
+            <span
+              class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"
+            ></span>
+            <span
+              class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"
+            ></span>
+            <span
+              class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"
+            ></span>
+          </button>
+        </div>
+        <!-- Image -->
+        <div>
+          <img class="h-[766px] mask-r-from-70%" src="Images/Header-Car 1.png" alt="Header-Car" />
+        </div>
+      </div>
+    </section>
+    <!-- Main-Container -->
+    <section class="px-[165px]">
+      <!-- Car-Models -->
+      <section class="my-[105px]">
+        <!-- Boxes -->
+        <div class="flex justify-center items-center gap-5">
+          <!-- Box -->
+          <div
+            class="border border-SecondaryColor rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
+          >
+            <i class="fa-solid fa-car-side text-2xl"></i>
+            <a class="opacity-60 hover:opacity-100 transition" href="#">Seda</a>
+          </div>
+          <!-- Box -->
+          <div
+            class="border border-SecondaryColor rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
+          >
+            <i class="fa-solid fa-car-side text-2xl"></i>
+            <a class="opacity-60 hover:opacity-100 transition" href="#">Cabriolet</a>
+          </div>
+          <!-- Box -->
+          <div
+            class="border rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
+          >
+            <i class="fa-solid fa-car-side text-2xl"></i>
+            <a class="opacity-60 hover:opacity-100 transition" href="#">Coupe</a>
+          </div>
+          <!-- Box -->
+          <div
+            class="border border-SecondaryColor rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
+          >
+            <i class="fa-solid fa-car-side text-2xl"></i>
+            <a class="opacity-60 hover:opacity-100 transition" href="#">SUV</a>
+          </div>
+          <!-- Box -->
+          <div
+            class="border rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
+          >
+            <i class="fa-solid fa-car-side text-2xl"></i>
+            <a class="opacity-60 hover:opacity-100 transition" href="#">Micro</a>
+          </div>
+        </div>
+      </section>
+      <!-- Top-Categories -->
+      <section class="mb-[60px]">
+        <h1 class="text-[96px] pb-[90px] text-center font-bold">Top Categories</h1>
+        <div class="text-[20px] flex justify-center items-center gap-10">
+          <a class="active" href="#">In Stock</a>
+          <a class="notActive" href="#">Used Cars</a>
+          <a class="notActive" href="#">Any Models</a>
+          <a class="notActive" href="#">Any Motors</a>
+          <a class="notActive" href="#">All Prices</a>
+        </div>
+        <hr />
+      </section>
+      <!-- Cars-Section -->
+      <section>
+        <!-- Images -->
+        <div class="grid grid-cols-4 gap-1.5">
+          <!-- Image -->
+          <div class="col-span-4 relative">
+            <div
+              class="font-black font-primaryFont text-white absolute left-10 flex flex-col gap-y-20"
+            >
+              <div>
+                <h1 class="text-[100px]">Porsche 911</h1>
+                <h1 class="text-[80px]">Buy Now</h1>
+              </div>
+              <div class="font-medium">
+                <button
+                  class="relative cursor-pointer py-5 px-10 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline-white focus:outline-offset-4 overflow-hidden"
+                >
+                  <span class="relative z-20">About Chis Car</span>
+
+                  <span
+                    class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"
+                  ></span>
+
+                  <span
+                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"
+                  ></span>
+                  <span
+                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"
+                  ></span>
+                  <span
+                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"
+                  ></span>
+                  <span
+                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <img
+              class="w-full h-full object-cover rounded-[5px]"
+              src="Images/Porsche-1.png"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div class="h-[250px] col-span-2 relative">
+            <div class="absolute bottom-0 right-0 p-3.5">
+              <i
+                class="fa-solid fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #ffd43b"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+            </div>
+            <img
+              class="w-full h-full object-cover rounded-[5px]"
+              src="Images/Porsche-2.png"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div class="h-[250px] col-span-1 relative">
+            <div class="absolute bottom-0 right-0 p-3.5">
+              <i
+                class="fa-solid fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #ffd43b"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+            </div>
+            <img class="w-full h-full object-cover rounded-[5px]" src="Images/Audi.png" alt="" />
+          </div>
+          <!-- Image -->
+          <div class="h-[250px] col-span-1 relative">
+            <div class="absolute bottom-0 right-0 p-3.5">
+              <i
+                class="fa-solid fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #ffd43b"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                style="color: #fff"
+              ></i>
+            </div>
+            <img class="w-full h-full object-cover rounded-[5px]" src="Images/Ferari.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Services-Section -->
+      <section>
+        <h1
+          class="font-bold font-primaryFont text-SecondaryColor text-[90px] text-center py-[130px]"
+        >
+          Our Services
+        </h1>
+        <!-- Boxes-Container -->
+        <div class="flex flex-col items-center gap-1.5">
+          <!-- Boxes-1 -->
+          <div class="flex gap-1.5">
+            <div
+              class="w-[500px] h-[550px] bg-[#171c28] text-white rounded-[10px] flex flex-col justify-around items-start p-10"
+            >
+              <h1 class="font-bold text-6xl">All Brands</h1>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem laborum quaerat
+                perspiciatis qui dolorum hic optio nesciunt eos illo.
+              </p>
+              <button
+                class="border-b-1 p-2.5 hover:bg-white hover:text-primaryColor hover:rounded-md transition cursor-pointer"
+              >
+                Lrean More
+                <i class="fa-solid fa-arrow-right text-[16px]"></i>
+              </button>
+            </div>
+            <div class="w-[600px] h-[550px] rounded-[10px]">
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="Images/Services-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Boxes-2 -->
+          <div class="flex gap-1.5">
+            <div class="w-[600px] h-[550px] rounded-[10px]">
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="Images/Services-2.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-[500px] h-[550px] bg-[#171c28] text-white rounded-[10px] flex flex-col justify-around items-start p-10"
+            >
+              <h1 class="font-bold text-6xl">Free Services</h1>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita fugit, eveniet
+                cum commodi vel, blanditiis temporibus sequi corporis in veniam quod optio
+                reiciendis quaerat ratione dolores sit amet deserunt culpa magni placeat, sed modi
+                eum recusandae! Et enim, veniam dolorum facilis minima odit soluta quae autem, eaque
+                adipisci asperiores.
+              </p>
+              <button
+                class="border-b-1 p-2.5 hover:bg-white hover:text-primaryColor hover:rounded-md transition cursor-pointer"
+              >
+                Lrean More
+                <i class="fa-solid fa-arrow-right text-[16px]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Footer -->
+    <section>
+      <div class="w-full h-auto bg-SecondaryColor mt-[150px] px-52">
+        <div class="flex justify-between items-center gap-10 text-white">
+          <div>
+            <img class="animate-pulse" src="Logo/Cars-Web-Logo-footer.png" alt="Logo" />
+          </div>
+          <div class="flex gap-10">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <h1 class="font-bold font-primaryFont">Devloped By Ramyar.IB😎</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="dist/index.js"></script>
   </body>
 </html>
