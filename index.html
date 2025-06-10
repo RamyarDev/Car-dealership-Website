@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,25 +19,25 @@
       <!-- Links & Logo -->
       <div class="flex justify-around pt-5">
         <a href="#">
-          <img class="animate-pulse" src="Logo/Cars-Web-Logo-Header.png" alt="Header-Logo" />
+          <img class="hover:animate-pulse" src="Logo/Cars-Web-Logo-Header.png" alt="Header-Logo" />
         </a>
         <div class="text-white flex gap-5">
-          <a href="#" class="cursor-pointer">Home</a>
+          <a href="#" class="cursor-pointer headerLinks">Home</a>
           <a
             href="#"
-            class="cursor-pointer opacity-80 hover:opacity-100 hover:scale-[1.1] transition"
+            class="opacity-80 hover:opacity-100 cursor-pointer hover:scale-[1.1] transition headerLinks"
           >
             About
           </a>
           <a
-            href="#"
-            class="cursor-pointer opacity-80 hover:opacity-100 hover:scale-[1.1] transition"
+            href="#Services"
+            class="opacity-80 hover:opacity-100 cursor-pointer hover:scale-[1.1] transition headerLinks"
           >
             Services
           </a>
           <a
             href="#"
-            class="cursor-pointer opacity-80 hover:opacity-100 hover:scale-[1.1] transition"
+            class="opacity-80 hover:opacity-100 cursor-pointer hover:scale-[1.1] transition headerLinks"
           >
             Contact
           </a>
@@ -46,7 +46,9 @@
       <!-- Header-Content -->
       <div class="flex items-center justify-between px-[80px] pt-[70px]">
         <!-- Texts -->
-        <div class="text-white flex flex-col justify-around items-start h-[600px] w-[730px]">
+        <div
+          class="text-white flex flex-col justify-around items-start h-[600px] w-[730px] animate-headerText"
+        >
           <h1 class="text-[96px] w-[700px] font-bold">Find Your Dream Car</h1>
           <p class="text-3xl font-light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt doloremque
@@ -78,7 +80,11 @@
         </div>
         <!-- Image -->
         <div>
-          <img class="h-[766px] mask-r-from-70%" src="Images/Header-Car 1.png" alt="Header-Car" />
+          <img
+            class="h-[766px] mask-r-from-70% animate-headerImage"
+            src="Images/Header-Car 1.png"
+            alt="Header-Car"
+          />
         </div>
       </div>
     </section>
@@ -93,47 +99,72 @@
             class="border border-SecondaryColor rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
           >
             <i class="fa-solid fa-car-side text-2xl"></i>
-            <a class="opacity-60 hover:opacity-100 transition" href="#">Seda</a>
+            <a
+              target="_blank"
+              class="opacity-60 hover:opacity-100 transition"
+              href="https://www.zigwheels.ae/new-cars/best-sedan"
+              >Sedan</a
+            >
           </div>
           <!-- Box -->
           <div
             class="border border-SecondaryColor rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
           >
             <i class="fa-solid fa-car-side text-2xl"></i>
-            <a class="opacity-60 hover:opacity-100 transition" href="#">Cabriolet</a>
+            <a
+              target="_blank"
+              class="opacity-60 hover:opacity-100 transition"
+              href="https://www.zigwheels.ae/search/result?q=Cabriolet"
+              >Cabriolet</a
+            >
           </div>
           <!-- Box -->
           <div
             class="border rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
           >
             <i class="fa-solid fa-car-side text-2xl"></i>
-            <a class="opacity-60 hover:opacity-100 transition" href="#">Coupe</a>
+            <a
+              target="_blank"
+              class="opacity-60 hover:opacity-100 transition"
+              href="https://www.zigwheels.ae/new-cars/best-coupe"
+              >Coupe</a
+            >
           </div>
           <!-- Box -->
           <div
             class="border border-SecondaryColor rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
           >
             <i class="fa-solid fa-car-side text-2xl"></i>
-            <a class="opacity-60 hover:opacity-100 transition" href="#">SUV</a>
+            <a
+              target="_blank"
+              class="opacity-60 hover:opacity-100 transition"
+              href="https://www.zigwheels.ae/latest-cars/suv"
+              >SUV</a
+            >
           </div>
           <!-- Box -->
           <div
             class="border rounded-[5px] w-[100px] h-[80px] p-2.5 flex flex-col justify-center items-center"
           >
             <i class="fa-solid fa-car-side text-2xl"></i>
-            <a class="opacity-60 hover:opacity-100 transition" href="#">Micro</a>
+            <a
+              target="_blank"
+              class="opacity-60 hover:opacity-100 transition"
+              href="https://www.zigwheels.ae/new-cars/nissan/patrol"
+              >Micro</a
+            >
           </div>
         </div>
       </section>
       <!-- Top-Categories -->
       <section class="mb-[60px]">
         <h1 class="text-[96px] pb-[90px] text-center font-bold">Top Categories</h1>
-        <div class="text-[20px] flex justify-center items-center gap-10">
-          <a class="active" href="#">In Stock</a>
-          <a class="notActive" href="#">Used Cars</a>
-          <a class="notActive" href="#">Any Models</a>
-          <a class="notActive" href="#">Any Motors</a>
-          <a class="notActive" href="#">All Prices</a>
+        <div id="Category-parent" class="text-[20px] flex justify-center items-center gap-10">
+          <p class="active cursor-pointer Category transition">In Stock</p>
+          <p class="notActive cursor-pointer Category transition">Used Cars</p>
+          <p class="notActive cursor-pointer Category transition">Any Models</p>
+          <p class="notActive cursor-pointer Category transition">Any Motors</p>
+          <p class="notActive cursor-pointer Category transition">All Prices</p>
         </div>
         <hr />
       </section>
@@ -151,28 +182,30 @@
                 <h1 class="text-[80px]">Buy Now</h1>
               </div>
               <div class="font-medium">
-                <button
-                  class="relative cursor-pointer py-5 px-10 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline-white focus:outline-offset-4 overflow-hidden"
-                >
-                  <span class="relative z-20">About Chis Car</span>
+                <a target="_blank" href="https://www.caranddriver.com/porsche/911">
+                  <button
+                    class="relative cursor-pointer py-5 px-10 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline-white focus:outline-offset-4 overflow-hidden"
+                  >
+                    <span class="relative z-20">About This Car</span>
 
-                  <span
-                    class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"
-                  ></span>
+                    <span
+                      class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"
+                    ></span>
 
-                  <span
-                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"
-                  ></span>
-                  <span
-                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"
-                  ></span>
-                  <span
-                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"
-                  ></span>
-                  <span
-                    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"
-                  ></span>
-                </button>
+                    <span
+                      class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"
+                    ></span>
+                    <span
+                      class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"
+                    ></span>
+                    <span
+                      class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"
+                    ></span>
+                    <span
+                      class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#fff] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"
+                    ></span>
+                  </button>
+                </a>
               </div>
             </div>
             <img
@@ -185,19 +218,19 @@
           <div class="h-[250px] col-span-2 relative">
             <div class="absolute bottom-0 right-0 p-3.5">
               <i
-                class="fa-solid fa-star cursor-pointer hover:scale-[1.1]"
-                style="color: #ffd43b"
-              ></i>
-              <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
               <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
               <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
             </div>
@@ -211,19 +244,19 @@
           <div class="h-[250px] col-span-1 relative">
             <div class="absolute bottom-0 right-0 p-3.5">
               <i
-                class="fa-solid fa-star cursor-pointer hover:scale-[1.1]"
-                style="color: #ffd43b"
-              ></i>
-              <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
               <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
               <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
             </div>
@@ -233,19 +266,19 @@
           <div class="h-[250px] col-span-1 relative">
             <div class="absolute bottom-0 right-0 p-3.5">
               <i
-                class="fa-solid fa-star cursor-pointer hover:scale-[1.1]"
-                style="color: #ffd43b"
-              ></i>
-              <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
               <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
               <i
-                class="fa-regular fa-star cursor-pointer hover:scale-[1.1]"
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
+                style="color: #fff"
+              ></i>
+              <i
+                class="fa-regular fa-star cursor-pointer hover:scale-[1.1] stars"
                 style="color: #fff"
               ></i>
             </div>
@@ -261,7 +294,7 @@
           Our Services
         </h1>
         <!-- Boxes-Container -->
-        <div class="flex flex-col items-center gap-1.5">
+        <div id="Services" class="flex flex-col items-center gap-1.5">
           <!-- Boxes-1 -->
           <div class="flex gap-1.5">
             <div
@@ -275,7 +308,7 @@
               <button
                 class="border-b-1 p-2.5 hover:bg-white hover:text-primaryColor hover:rounded-md transition cursor-pointer"
               >
-                Lrean More
+                Learn More
                 <i class="fa-solid fa-arrow-right text-[16px]"></i>
               </button>
             </div>
@@ -310,7 +343,7 @@
               <button
                 class="border-b-1 p-2.5 hover:bg-white hover:text-primaryColor hover:rounded-md transition cursor-pointer"
               >
-                Lrean More
+                Learn More
                 <i class="fa-solid fa-arrow-right text-[16px]"></i>
               </button>
             </div>
@@ -319,7 +352,7 @@
       </section>
     </section>
     <!-- Footer -->
-    <section>
+    <section class="">
       <div class="w-full h-auto bg-SecondaryColor mt-[150px] px-52">
         <div class="flex justify-between items-center gap-10 text-white">
           <div>
@@ -327,9 +360,9 @@
           </div>
           <div class="flex gap-10">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a>About</a>
+            <a href="#Services">Services</a>
+            <a>Contact</a>
             <h1 class="font-bold font-primaryFont">Devloped By Ramyar.IB😎</h1>
           </div>
         </div>

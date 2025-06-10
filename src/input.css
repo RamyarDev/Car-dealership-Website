@@ -20,8 +20,28 @@
     background-color: black;
     border-radius: 10px;
   }
-  .notActive {
-    opacity: 50%;
-    filter: blur(0.6px);
+}
+@theme {
+  --animate-headerText: headerText 500ms ease-in-out;
+  @keyframes headerText {
+    0% {
+      opacity: 0%;
+      translate: -50px 0px;
+    }
+    100% {
+      opacity: 100%;
+      scale: 1;
+    }
+  }
+  --animate-headerImage: headerImage 500ms ease-in-out;
+  @keyframes headerImage {
+    0% {
+      opacity: 0%;
+      translate: 50px 0px;
+    }
+    100% {
+      opacity: 100%;
+      scale: 1;
+    }
   }
 }
